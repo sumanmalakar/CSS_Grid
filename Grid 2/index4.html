@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    .wrapper{
+        height:100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 2fr;
+        /* grid-auto-rows: 70px; */
+        grid-gap:0.5em;
+        text-align: center;
+        grid-template-areas: "box2 box3" /* for columns*/
+
+        /* this is second row*/
+        ". box1";
+
+
+
+    }
+
+    .box1{
+        background-color:blue;
+        grid-area: box1;
+
+    }
+    .box2{
+        background-color:yellow;
+        grid-area: box2;
+    }
+    .box3{
+        background:black;
+        grid-area: box3;
+        color:#fff;
+    }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box3">Box3</div>
+    </div>
+    
+</body>
+</html>
